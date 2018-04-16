@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kids_multipy</title>
+<style type="text/css">
+	html{background-image: url(10.jpg);
+		background-color: rgba(0,0,200,0.5);
+	}
+	h1{
+		font-family: serif;
+		text-shadow: 1.5px 1.5px #d3d3d3;
+		color: green;
+		text-align: center;
+	}
+	
+	#multiply{
+		font-family: sans-serif;
+		font-size: 20px;
+		outline-color: coral;
+		position: absolute;
+		left: 30px;
+		top:70px;
+	}
+	.cl{ 
+		font-size: 25px;
+		position: absolute;
+		left: 800px;
+		right: 50px;
+		top: 150px;
+		background: silver;
+
+	}
+	#mycanvas{
+		position: absolute;
+		top:150px;
+	}
+	.add{
+
+		position: absolute;
+		top:380px;
+	}
+	#exercise1{
+		font-color:red;
+	}
+	.exercise1{background-image: url(download.jfif);
+		position: absolute;
+		left: 800px;
+		right:50px;
+		top:450px;
+
+	}
+	.sub{
+		position: absolute;
+		top: 580px;
+	}
+	.exercise2{background-image: url(download.jfif);
+		position: absolute;
+		right:50px;
+		left:800px;
+		top:700px;
+
+	}
+	#p1{
+		position: absolute;
+		left: 1000px;
+		top:600px; 
+	}
+	#p2{position: absolute;
+		left: 1200px;
+		top:600px; 
+	}
+	#p3{position: absolute;
+		left: 1000px;
+		top:800px; 
+	}
+	#p4{position: absolute;
+		left: 1200px;
+		top:800px; 
+	}
+	.topic{
+		position: absolute;
+		top:800px;
+	}
+	.main{
+		position: absolute;
+		top:850px;
+	}
+	#img{
+		position: absolute;
+		top:0px;
+		left:500px;
+	}
+	.add{
+		position: absolute;
+		top:380px;
+	}
+	.exercise3{background-image: url(download.jfif);
+		position: absolute;
+		right:400px;
+		top:1270px;
+	}
+	.exercise4{background-image: url(download.jfif);
+		position: absolute;
+		right:400px;
+		top:1400px;
+	}
+	#p5{
+		position: absolute;
+		left: 650px;
+		top:1360px; 
+	}
+	#p6{position: absolute;
+		left: 780px;
+		top:1360px; 
+	}
+	#p7{position: absolute;
+		left: 650px;
+		top:1500px; 
+	}
+	#p8{position: absolute;
+		left: 780px;
+		top:1500px; 
+	}
+	.last{
+		position: absolute;
+		top:1550px;
+	}
+	#rj{
+		position: absolute;
+		right: 10px;
+		top:1580px;
+	}
+</style>
+</head>
+<body>
+
+<h1><b>Chlo Aaj kuch Acha Seekhte Hai</h1>
+<h2 id='head1'></h2>
+
+<p id='multiply'>Let's learn MULTIPLY from Scratch</p>
+
+<div class="cl">
+<p id='known' >what u should know??</p>
+<ul>
+	<li>Addition</li>
+	<li>Subtraction</li>
+</ol>
+</ul>
+<p id='ohho'>let's first learn how to ADD and SUBTRACT in quickly manner</p>
+</div>
+
+
+<div class="add">
+<h2 id="add" >Addition Block</h2>
+<p id="p_add>"let's first see your fingers<br>you have 5 finger in your blue hand and 5 in pink<br><img src="D:\arr jay\javascript\blue-hand-print-hi.png" height="120px" width="120px">
+
+now count all as
+<img src="D:\arr jay\javascript\pink-hand-print-hi.png" height="120px" width="120px">
+ 5+5=?
+<img src="D:\arr jay\javascript\images.png" height="120px" width="120px">
+ <br></p> </div>
+ 
+<div class="sub">
+<h2 id="add">Subtraction Block</h2>
+<p id="p_add>"let's first see your fingers<br>you have 5 finger in your blue hand and 5 in pink<br><img src="D:\arr jay\javascript\blue-hand-print-hi.png" height="120px" width="120px">
+
+<img src="D:\arr jay\javascript\pink-hand-print-hi.png" height="120px" width="120px">
+ 
+now count all as
+<img src="D:\arr jay\javascript\Teach_Subtraction_Using_Fingers.png" height="120px" width="320px">
+ <br></p> </div>
+ 
+
+<canvas id="mycanvas" height="200px" width="500px" style="border: 3px dotted #d3d3d3"></canvas>
+
+<p class="para" id="p1"></p>
+<p class="para" id="p2"></p>
+<p class="para" id="p3"></p>
+<p class="para" id="p4"></p>
+<script type="text/javascript">
+	var z=document.getElementById('mycanvas');
+	var ctx=z.getContext('2d');
+	ctx.font="40px Algerian";
+	ctx.strokeText('Multiply:',10,50);
+	ctx.strokeText('3*4=12??',230,160);
+	ctx.strokeText('2*3=6??',230,100);
+
+
+</script>
+<div class="fun">
+<script type="text/javascript">
+
+	function fun1(){
+		var click=Number(document.getElementById('t_f1').value);
+			if(click===8){
+				document.getElementById('p1').innerHTML="correct";
+			}else{
+				document.getElementById('p1').innerHTML="wrong";
+			}	
+	}
+
+	function fun2(){
+		var click=Number(document.getElementById('t_f1').value);
+			if(click===28){
+				document.getElementById('p2').innerHTML="correct";
+			}else{
+				document.getElementById("p2").innerHTML="wrong";
+			}	}
+
+	function fun3(){
+		var click=Number(document.getElementById('t2').value);
+			if(click===2){
+				document.getElementById("p3").innerHTML="correct";
+			}else{
+				document.getElementById("p3").innerHTML="wrong";
+			}	}
+
+	function fun4(){
+		var click=Number(document.getElementById('t2').value);
+			if(click===2){
+				document.getElementById("p4").innerHTML="correct";
+			}else{
+				document.getElementById("p4").innerHTML="wrong";
+			}	}
+
+</script>
+</div>
+
+
+
+<div class="exercise1">
+<h4 id=exercise1>Now do your EXERCISE:</h4><br>
+<label for="label1">1) 5+3=</label>
+<input type="text" id="t_f1" name="Ans" size="5px" value=" ">
+<input type="button" name="button" value="submit" size="5px" onclick="fun1()">
+
+<label for='label2'>2) 15+13=</label>
+<input type="text" id="t2" name="Ans" size="5px" value=" ">
+<input type="button" name="button" value="submit" size="5px" onclick="fun2()">
+</div>
+ 
+ <div class="exercise2">
+<h4 id=exercise1>Now do your EXERCISE:</h4><br>
+<label for='label1'>1) 5-3=</label>
+<input type="text" id="t1" name="Ans" size="5px" value=" ">
+<input type="button" name="button" value="submit" size="5px" onclick="fun3()">
+
+<label for='label2'>2) 15-13=</label>
+<input type="text" id="t2" name="Ans" size="5px" value=" ">
+<input type="button" name="button" value="submit" size="5px" onclick="fun4()">
+
+</div>
+
+<div class ="topic">
+	<h2 id="mul" >MULTIPLICATION BLOCK</h2>
+</div>
+
+<div class="main">
+	<p id="main">See!!You don't know <i>3*4=???</i><br>
+	Now, We will learn multiplication with help of addition<br><br>1)<br>
+	<b>ADD 3 <i>FOUR times</i> (i.e) 3+3+3+3=12<br></b>
+	<b>OR</b><br>
+	<b>ADD 4 <i> THREE times</i> (i.e) 4+4+4=12<br></b>
+	<img id="img" src="D:\arr jay\javascript\new.jpg" height="250px" width="250px">
+	<br><br>2)<br>
+	<b>ADD 4 <i>SEVEN times</i> (i.e) 4+4+4+4+4+4+4=28<br></b>
+	<b>OR</b><br>
+	<b>ADD 7 <i> FOUR times</i> (i.e) 7+7+7+7=28<br></b><br><br>
+	</p>
+	<h2><b>Now, I Think You Got it!!</b></h6>
+	<h3>Let's do a practise to check Whether yoy got it or not</h3>
+	<h2><b><i>READY</i></b></h2>
+
+
+
+</div>
+<div class="fun2">
+
+<p class="para" id="p5"></p>
+<p class="para" id="p6"></p>
+<p class="para" id="p7"></p>
+<p class="para" id="p8"></p>
+<script type="text/javascript">
+
+	function fun5(){
+		var click=Number(document.getElementById('t4').value);
+			if(click===15){
+				document.getElementById('p5').innerHTML="correct";
+			}else{
+				document.getElementById('p5').innerHTML="wrong";
+			}	
+	}
+
+	function fun6(){
+		var click=Number(document.getElementById('t5').value);
+			if(click===45){
+				document.getElementById('p6').innerHTML="correct";
+			}else{
+				document.getElementById("p6").innerHTML="wrong";
+			}	}
+
+	function fun7(){
+		var click=Number(document.getElementById('t6').value);
+			if(click===75){
+				document.getElementById("p7").innerHTML="correct";
+			}else{
+				document.getElementById("p7").innerHTML="wrong";
+			}	}
+
+	function fun8(){
+		var click=Number(document.getElementById('t7').value);
+			if(click===165){
+				document.getElementById("p8").innerHTML="correct";
+			}else{
+				document.getElementById("p8").innerHTML="wrong";
+			}	}
+
+</script>
+</div>
+
+
+
+<div class="exercise3">
+<h4 id=exercise1>Now do your EXERCISE:</h4><br>
+<label for="label1">1) 5*3=</label>
+<input type="text" id="t4" name="Ans" size="5px" value=" ">
+<input type="button" name="button" value="submit" size="5px" onclick="fun5()">
+
+<label for='label2'>2) 15*3=</label>
+<input type="text" id="t5" name="Ans" size="5px" value=" ">
+<input type="button" name="button" value="submit" size="5px" onclick="fun6()">
+</div>
+ 
+ <div class="exercise4">
+
+<label for='label1'>3) 25*3=</label>
+<input type="text" id="t6" name="Ans" size="5px" value=" ">
+<input type="button" name="button" value="submit" size="5px" onclick="fun7()">
+
+<label for='label2'>4) 55*3=</label>
+<input type="text" id="t7" name="Ans" size="5px" value=" ">
+<input type="button" name="button" value="submit" size="5px" onclick="fun8()">
+
+</div>
+
+
+<div class="last">
+	<p><b><i> So,This was I supposed to Develop</i></b></p>
+</div>
+
+<h1 id="rj"><b><i>-Arrjay</b></i></h2>
+</body>
+</html>
